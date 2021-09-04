@@ -5,7 +5,7 @@
     using System.Threading.Tasks;
 
     using LuckyBalls.Common;
-    using LuckyBalls.Data.Models;
+    using LuckyBalls.Data.Models.User;
 
     using Microsoft.AspNetCore.Identity;
     using Microsoft.Extensions.DependencyInjection;

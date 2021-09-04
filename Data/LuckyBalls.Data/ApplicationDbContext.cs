@@ -8,6 +8,8 @@
 
     using LuckyBalls.Data.Common.Models;
     using LuckyBalls.Data.Models;
+    using LuckyBalls.Data.Models.Game;
+    using LuckyBalls.Data.Models.User;
 
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
@@ -23,6 +25,10 @@
             : base(options)
         {
         }
+
+        public DbSet<Game> Games { get; set; }
+
+        public DbSet<Wallet> Wallets { get; set; }
 
         public DbSet<Setting> Settings { get; set; }
 

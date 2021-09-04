@@ -5,7 +5,7 @@
     using LuckyBalls.Data;
     using LuckyBalls.Data.Common;
     using LuckyBalls.Data.Common.Repositories;
-    using LuckyBalls.Data.Models;
+    using LuckyBalls.Data.Models.User;
     using LuckyBalls.Data.Repositories;
     using LuckyBalls.Data.Seeding;
     using LuckyBalls.Services.Data;
@@ -38,7 +38,8 @@
                 options => options.UseSqlServer(this.configuration.GetConnectionString("DefaultConnection")));
 
             services.AddDefaultIdentity<ApplicationUser>(IdentityOptionsProvider.GetIdentityOptions)
-                .AddRoles<ApplicationRole>().AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddRoles<ApplicationRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.Configure<CookiePolicyOptions>(
                 options =>

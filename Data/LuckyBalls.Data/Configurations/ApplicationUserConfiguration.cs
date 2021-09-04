@@ -1,6 +1,6 @@
 ﻿namespace LuckyBalls.Data.Configurations
 {
-    using LuckyBalls.Data.Models;
+    using LuckyBalls.Data.Models.User;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

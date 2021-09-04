@@ -1,5 +1,5 @@
 ﻿// ReSharper disable VirtualMemberCallInConstructor
-namespace LuckyBalls.Data.Models
+namespace LuckyBalls.Data.Models.User
 {
     using System;
     using System.Collections.Generic;
@@ -17,6 +17,8 @@ namespace LuckyBalls.Data.Models
             this.Claims = new HashSet<IdentityUserClaim<string>>();
             this.Logins = new HashSet<IdentityUserLogin<string>>();
         }
+
+        public virtual Wallet Wallet { get; set; }
 
         // Audit info
         public DateTime CreatedOn { get; set; }

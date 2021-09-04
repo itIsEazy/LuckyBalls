@@ -1,9 +1,9 @@
 ﻿namespace LuckyBalls.Web.ViewModels.Settings
 {
+    using AutoMapper;
+
     using LuckyBalls.Data.Models;
     using LuckyBalls.Services.Mapping;
-
-    using AutoMapper;
 
     public class SettingViewModel : IMapFrom<Setting>, IHaveCustomMappings
     {

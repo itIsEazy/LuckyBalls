@@ -1,5 +1,5 @@
 ﻿// ReSharper disable VirtualMemberCallInConstructor
-namespace LuckyBalls.Data.Models
+namespace LuckyBalls.Data.Models.User
 {
     using System;
 
